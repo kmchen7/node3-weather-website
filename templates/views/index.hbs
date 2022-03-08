@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="/img/weather.png">
+        <!--rel means relationship to this html and stylesheet is the needed value-->
+        <!--href is the relative path, since index lives in public, public is the "root" here-->
+        <!--Relative to web server route access-->
+        <link rel="stylesheet" href="/css/styles.css">
+        
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>Use this site to get your weather!</p>
+
+            <form>
+                <input placeholder="Location">
+                <button>Search</button>
+            </form>
+            <!--IDs in HTML are always constant or unique like and ID-->
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>
+        
+        {{>footer}}
+        <!--Careful to put src attribute within script tag!-->
+        <!--This placement of script tag means the script executes only after element tags are in place-->
+        <script src="/js/app.js"></script>
+    </body>
+</html>
