@@ -1,4 +1,4 @@
-console.log('Client side javascript file is loaded!')
+// console.log('Client side javascript file is loaded!')
 
 // Script is running in client side javascript
 // fetches data from url, performs a callback function on data
