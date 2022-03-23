@@ -37,7 +37,7 @@ weatherForm.addEventListener('submit', (e) => {
     // fetch is client side javascript (runs on the client's browser page)
     // node is more server side javascript w/ node
     // Now we only fetch the data when submit button occurs
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
         // response.json takes a response object, the .json method
         // turns the json to a javascript object as a promise to resolve
         // into a javascript object, the .then takes the data and extracts
